@@ -16,54 +16,58 @@ body {
   display: flex;
   padding: 0 20px 0 20px;
   justify-content: space-between;
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   align-items: center;
   color: white;
-  height: 10vh;
+  height: 50px;
 }
 
 .intro {
-  height: 90vh;
-  background-color: #1C1A19;
+  height: 500px;
+  background-color: #1c1a19;
   padding: 0 24px 130px 24px;
+  background-image: url("./assets/Intro\ background\ image.jpg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
 }
 
 header {
-  font-family: Crete Round;
+  font-family: Crete Round, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
   line-height: 64px;
-  color: #FF6B00;
+  color: #ff6b00;
   padding-top: 100px;
 }
 
 header > p {
-    margin: auto;
-    padding-bottom: 15px;
+  margin: auto;
+  padding-bottom: 15px;
 }
+
 .primary-content > h3 {
-    font-family: roboto;
-    color: #FFF5E1;
-    font-size: 24px;
-    line-height: 32px;
-    margin: auto;
+  font-family: roboto, sans-serif;
+  color: #fff5e1;
+  font-size: 24px;
+  line-height: 32px;
+  margin: auto;
 }
 
 .primary-content > p {
-    font-family: poppins;
-    color: white;
-    font-size: 16px;
-    line-height: 24px;
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .socials {
-    display: flex;
-    width: 230px;
-    justify-content: space-between;
+  display: flex;
+  width: 230px;
+  justify-content: space-between;
 }
 
 .fab {
-    color: #DBD8D7;
+  color: #dbd8d7;
 }
-
