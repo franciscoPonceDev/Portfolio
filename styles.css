@@ -7,14 +7,9 @@ body {
   margin: 0;
 }
 
-/* .container {
-  display: flex;
-  flex-direction: column;
-} */
-
 .nav-bar {
   display: flex;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   justify-content: space-between;
   background-color: #3c3a39;
   align-items: center;
@@ -71,6 +66,10 @@ body {
   justify-content: space-between;
   font-size: 20px;
   padding-top: 20px;
+}
+
+.socials > li {
+  list-style-type: none;
 }
 
 .fab {
