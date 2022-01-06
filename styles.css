@@ -1,3 +1,5 @@
+/* HTML & body */
+
 html {
   box-sizing: border-box;
 }
@@ -6,6 +8,12 @@ body {
   font-family: sans-serif;
   margin: 0;
 }
+
+body > * {
+  padding: 0 24px;
+}
+
+/* Toolbar */
 
 .nav-bar {
   display: flex;
@@ -16,6 +24,8 @@ body {
   color: white;
   height: 50px;
 }
+
+/* Heading Section */
 
 .intro {
   height: 500px;
@@ -74,4 +84,262 @@ body {
 
 .fab {
   color: #dbd8d7;
+}
+
+/* Recent Works Section */
+
+.recent-works {
+  font-family: Crete Round, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 30px;
+  line-height: 52px;
+  text-align: center;
+  padding-top: 100px;
+  color: #1c1a19;
+  padding-bottom: 120px;
+}
+
+hr {
+  width: 330px;
+  border-color: black;
+}
+
+.recent-works img {
+  padding-top: 70px;
+  width: 327px;
+  height: 237px;
+}
+
+.recent-works h4 {
+  text-align: left;
+  font-family: Crete Round, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.recent-works p {
+  text-align: left;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tech-used {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.recent-works li {
+  border: 1px solid black;
+  list-style: none;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  padding: 10px;
+  margin: 0 12px 0 0;
+}
+
+button {
+  background-color: #f55b00;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+}
+
+button:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55b00;
+  color: #f55b00;
+}
+
+button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.recent-works button {
+  width: 124px;
+  height: 48px;
+  float: left;
+}
+
+/* Recent Work Cards */
+
+.cards-section {
+  padding-top: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+}
+
+.card-content {
+  height: 386px;
+  background:
+    linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url(./assets/Img_Placeholder_2.png);
+  padding: 0 16px;
+}
+
+.card-content > h4 {
+  font-family: Crete Round, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 32px;
+  line-height: 44px;
+  color: white;
+  padding-top: 45px;
+}
+
+.card-content > p {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+.card-content > ul {
+  display: flex;
+  width: 230px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.card-content li {
+  color: white;
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+}
+
+.work-card > button {
+  width: 100%;
+}
+
+/* About Me Section */
+
+.about-me {
+  padding-top: 110px;
+  background-color: #1c1a19;
+}
+
+/* I've separated the about me in two sections in order to use the background image properly */
+
+/* About me 1st section */
+
+.about-text {
+  background-image: url(./assets/About-me_background_image.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.about-text > h2 {
+  margin: 0;
+  font-family: Crete Round, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 88px;
+  color: #ff6b00;
+}
+
+.about-text > p {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+.about-text > button {
+  width: 161px;
+  height: 48px;
+}
+
+.about-text > hr {
+  padding-top: 210px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: white;
+}
+
+/* About me 2st section */
+
+.skill-set {
+  padding-top: 100px;
+  color: white;
+  text-align: center;
+}
+
+.skill-set ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.skill-set li {
+  padding: 17px 0;
+}
+
+.languages {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  list-style-image: url("./assets/Rectangle_bullet.png");
+  list-style-position: inside;
+}
+
+.frameworks {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  list-style-image: url("./assets/Rectangle_45degrees_bullet.png");
+  list-style-position: inside;
+}
+
+.skills {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  list-style-image: url("./assets/circle-bullet.png");
+  list-style-position: inside;
+}
+
+.skill-item {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+  list-style-type: none;
 }
