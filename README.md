@@ -10,11 +10,6 @@ As is the first project, we are supposed to do only the two firsts sections.
 - CSS
 
 
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
-
 ## Authors
 
 👤 **Francisco Ponce**
@@ -24,8 +19,3 @@ As is the first project, we are supposed to do only the two firsts sections.
 
 
 Give a ⭐️ if you like this project!
-
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.

@@ -7,10 +7,10 @@ body {
   margin: 0;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .nav-bar {
   display: flex;
@@ -32,19 +32,20 @@ body {
   background-position-y: bottom;
 }
 
-header {
+.name {
   font-family: Crete Round, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 56px;
-  line-height: 64px;
   color: #ff6b00;
   padding-top: 100px;
 }
 
-header > p {
+.name > h1 {
   margin: auto;
+  font-weight: lighter;
   padding-bottom: 15px;
+  font-size: 56px;
+  line-height: 64px;
 }
 
 .primary-content > h3 {
@@ -58,14 +59,18 @@ header > p {
 .primary-content > p {
   font-family: poppins, sans-serif;
   color: white;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
 }
 
 .socials {
   display: flex;
-  width: 230px;
+  width: 200px;
   justify-content: space-between;
+  font-size: 20px;
+  padding-top: 20px;
 }
 
 .fab {
