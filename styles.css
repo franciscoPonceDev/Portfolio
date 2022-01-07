@@ -241,18 +241,22 @@ button:active {
 .about-me {
   padding-top: 110px;
   background-color: #1c1a19;
+  background-image: url(./assets/About-me_background_image.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 370px;
 }
 
 /* I've separated the about me in two sections in order to use the background image properly */
 
 /* About me 1st section */
 
-.about-text {
+/* .about-text {
   background-image: url(./assets/About-me_background_image.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
-}
+} */
 
 .about-text > h2 {
   margin: 0;
