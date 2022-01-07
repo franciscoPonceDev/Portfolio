@@ -251,13 +251,6 @@ button:active {
 
 /* About me 1st section */
 
-/* .about-text {
-  background-image: url(./assets/About-me_background_image.png);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
-} */
-
 .about-text > h2 {
   margin: 0;
   font-family: Crete Round, sans-serif;
