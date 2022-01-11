@@ -123,27 +123,27 @@
                 <br>
             </div>
         </section>
-        <form action="https://formspree.io/f/mqknezdy" method="POST">
+        <form class="form" action="https://formspree.io/f/mqknezdy" method="POST">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             <ul class="contact-form">
                 <li>
                     <label for="name"></label>
-                    <input type="text" id="name" name="user_name" placeholder="Full name" maxlength="30">
+                    <input type="text" id="name" name="user_name" placeholder="Full name" maxlength="30" required>
                 </li>
                 <li>
                     <label for="email"></label>
-                    <input type="email" id="email" name="user_email" placeholder="Email address">
+                    <input type="email" id="email" name="user_email" placeholder="Email address" required>
                 </li>
                 <li>
                     <label for="message"></label>
-                    <textarea id="message" name="user_message" placeholder="Enter text here" maxlength="500"></textarea>
+                    <textarea id="message" name="user_message" placeholder="Enter text here" maxlength="500" required></textarea>
                 </li>
             </ul>
-            <button type="submit">Get in touch</button>
+            <button class="form-button" type="submit">Get in touch</button>
         </form>
+        <hr class="form-hr">
         <footer>
-            <hr>
-            <ul class="socials footer-socials">
+            <ul class="footer-socials">
                 <li><a href=""><i class="fab fa-github"></i></a></li>
                 <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
                 <li><a href=""><i class="fab fa-angellist"></i></a></li>
