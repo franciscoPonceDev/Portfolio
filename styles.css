@@ -440,7 +440,7 @@ footer {
 
 /* Desktop version Media Query */
 
-@media screen and (min-width: 992px) and (max-width: 1399px) {
+@media (min-width: 992px) {
   /* Toolbar Desktop */
 
   .nav-bar h3 {
@@ -469,7 +469,7 @@ footer {
   }
 
   .fa-bars {
-    display: none;
+    display: none !important;
   }
 
   /* Heading Section Desktop */
@@ -787,7 +787,7 @@ footer {
   }
 
   .fa-bars {
-    display: none;
+    display: none !important;
   }
 
   /* Heading Section Desktop */
