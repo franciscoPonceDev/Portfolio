@@ -19,6 +19,12 @@
 <body>
         <header class="nav-bar">
             <h3>John Doe</h3>
+            <ul class="desktop-only">
+                <li><a class="link" href="#portfolio">Portfolio</a></li>
+                <li><a class="link" href="#about-me">About</a></li>
+                <li><a class="link" href="#contact">Contact</a></li>
+                <li><a class="link" href="#contact"><i class="far fa-envelope fa-lg"></i></a></li>
+            </ul>
             <i class="fas fa-bars fa-lg"></i>
         </header>
         <section class="intro">
@@ -38,20 +44,24 @@
                 <li><a href=""><i class="fab fa-medium-m"></i></a></li>
             </ul>
         </section>
-        <section class="recent-works">
-            <h3>My Recent Works</h3>
-            <hr>
+        <section id="portfolio" class="recent-works">
+            <div class="section-title">
+                <h3>My Recent Works</h3>
+                <hr>
+            </div>
             <div class="recent-work">
                 <a href=""><img src="./assets/Img_Placeholder_1.png" alt="Women doing yoga"></a>
-                <h4>Multi-Post Stories</h4>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                <ul class="tech-used">
-                    <li>CSS</li>
-                    <li>html</li>
-                    <li>bootsrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <button class="project-button " type="button">See Project</button>
+                <div>
+                    <h4>Multi-Post Stories</h4>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                    <ul class="tech-used">
+                        <li>CSS</li>
+                        <li>html</li>
+                        <li>bootsrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                    <button class="project-button" type="button">See Project</button>
+                </div>
             </div>
             <br>
             <div class="cards-section">
@@ -91,39 +101,78 @@
                     </div>
                     <button type="button">See Project</button>
                 </div>
+                <div class="work-card">
+                    <div class="card-content">
+                        <h4>Professional Art Printing Data</h4>
+                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                        <ul>
+                            <li>html</li>
+                            <li>bootsrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </div>
+                    <button type="button">See Project</button>
+                </div>
+                <div class="work-card">
+                    <div class="card-content">
+                        <h4>Professional Art Printing Data</h4>
+                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                        <ul>
+                            <li>html</li>
+                            <li>bootsrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </div>
+                    <button type="button">See Project</button>
+                </div>
+                <div class="work-card">
+                    <div class="card-content">
+                        <h4>Professional Art Printing Data</h4>
+                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                        <ul>
+                            <li>html</li>
+                            <li>bootsrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </div>
+                    <button type="button">See Project</button>
+                </div>
             </div>
         </section>
-        <section class="about-me">
-            <div class="about-text">
-                <h2>About me</h2>
-                <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-                <button type="button">Get My Resume</button>
-                <hr class="hr">
-            </div>
-            <div class="skill-set">
-                <ul>
-                    <li class="languages"> Languages</li>
-                    <li class="skill-item">Javascript</li>
-                    <li class="skill-item">Ruby</li>
-                    <li class="skill-item">Html</li>
-                    <li class="skill-item">Css</li>
-                    <li class="frameworks"> Frameworks</li>
-                    <li class="skill-item">Bootstrap</li>
-                    <li class="skill-item">Ruby on Rails</li>
-                    <li class="skill-item">RSPec</li>
-                    <li class="skill-item">CapyBara</li>
-                    <li class="skill-item">Selenium</li>
-                    <li class="skills"> Skills</li>
-                    <li class="skill-item">Codekit</li>
-                    <li class="skill-item">Github</li>
-                    <li class="skill-item">Codepen</li>
-                    <li class="skill-item">Gitlab</li>
-                    <li class="skill-item">Terminal</li>
-                </ul>
-                <br>
+        <section id="about-me" class="about-me">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About me</h2>
+                    <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                    <button type="button">Get My Resume</button>
+                    <hr class="hr">
+                </div>
+                <div class="skill-set">
+                    <ul>
+                        <li class="languages"> Languages</li>
+                        <li class="skill-item">Javascript</li>
+                        <li class="skill-item">Ruby</li>
+                        <li class="skill-item">Html</li>
+                        <li class="skill-item">Css</li>
+                        <li class="skill-item">&nbsp;</li>
+                        <li class="frameworks"> Frameworks</li>
+                        <li class="skill-item">Bootstrap</li>
+                        <li class="skill-item">Ruby on Rails</li>
+                        <li class="skill-item">RSPec</li>
+                        <li class="skill-item">CapyBara</li>
+                        <li class="skill-item">Selenium</li>
+                        <li class="skills"> Skills</li>
+                        <li class="skill-item">Codekit</li>
+                        <li class="skill-item">Github</li>
+                        <li class="skill-item">Codepen</li>
+                        <li class="skill-item">Gitlab</li>
+                        <li class="skill-item">Terminal</li>
+                    </ul>
+                    <br>
+                </div>
             </div>
         </section>
-        <form class="form" action="https://formspree.io/f/mqknezdy" method="POST">
+        <form id="contact" class="form" action="https://formspree.io/f/mqknezdy" method="POST">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             <ul class="contact-form">
                 <li>

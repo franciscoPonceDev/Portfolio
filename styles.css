@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,6 +12,10 @@ body {
 
 body > * {
   padding: 0 24px;
+}
+
+.desktop-only {
+  display: none;
 }
 
 /* Toolbar */
@@ -431,4 +436,633 @@ footer {
 
 .footer-socials li {
   list-style: none;
+}
+
+/* Desktop version Media Query */
+
+@media screen and (min-width: 992px) and (max-width: 1399px) {
+  /* Toolbar Desktop */
+
+  .nav-bar h3 {
+    margin-left: 150px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 150px;
+  }
+
+  .nav-bar li {
+    margin-left: 40px;
+    list-style: none;
+  }
+
+  .link {
+    color: #fff;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  /* Heading Section Desktop */
+
+  .intro {
+    height: 600px;
+    background-color: #1c1a19;
+    background-image: url("./assets/illustration-header-desktop.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    background-size: 45%;
+  }
+
+  .name {
+    margin-left: 140px;
+    float: left;
+    margin-top: 250px;
+    padding: 0;
+  }
+
+  .name h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .primary-content {
+    margin-left: 140px;
+    width: 400px;
+  }
+
+  .primary-content h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .primary-content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 32px;
+  }
+
+  .intro ul {
+    order: -1;
+    flex-direction: column;
+    position: absolute;
+    padding: 0;
+    margin: 320px 0 0 0;
+  }
+
+  .socials li {
+    justify-content: space-between;
+    margin: 12px;
+  }
+
+  /* My Recent Works Section Desktop */
+
+  .recent-works {
+    padding: 0;
+    margin: 80px 70px;
+    text-align: left;
+  }
+
+  .section-title {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .section-title h3 {
+    margin-right: 10px;
+  }
+
+  .section-title hr {
+    height: 0;
+    width: 600px;
+    color: #212121;
+  }
+
+  .recent-works img {
+    padding-top: 0;
+    width: 530px;
+    height: 350px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    float: left;
+  }
+
+  .recent-works h4 {
+    padding-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 52px;
+  }
+
+  .recent-works p {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .recent-works li {
+    clear: both;
+    border: 1px solid black;
+    font-size: 15px;
+    line-height: 15px;
+    color: #091e42;
+    margin-right: 15px;
+    padding: 10px 15px;
+  }
+
+  .cards-section {
+    clear: both;
+    display: grid;
+    gap: 45px 25px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: 1fr;
+    padding-top: 0;
+  }
+
+  .work-card {
+    width: auto;
+    height: 435px;
+  }
+
+  .card-content h4 {
+    padding-top: 100px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .card-content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .card-content > ul {
+    display: flex;
+    width: 236px;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .card-content li {
+    color: white;
+    background: rgba(255, 255, 255, 0.24);
+    border: none;
+    padding: 12px;
+    margin-right: 12px;
+  }
+
+  /* About me Desktop */
+
+  .about-me {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1px 0 1px 0;
+    background-image: url(./assets/About-me_background_image-desktop.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 100px;
+    background-size: 45%;
+  }
+
+  .about-content {
+    margin: 80px 70px;
+  }
+
+  .about-text > h2 {
+    margin: 0;
+    font-family: Crete Round, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 61px;
+    color: #ff6b00;
+  }
+
+  .about-text > p {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 32px;
+    color: #f4f5f7;
+    width: 450px;
+  }
+
+  .about-text > button {
+    margin-top: 25px;
+    width: 161px;
+    height: 48px;
+  }
+
+  .about-text > hr {
+    padding-top: 150px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    width: auto;
+  }
+
+  .skill-set {
+    padding-top: 60px;
+    color: white;
+    text-align: left;
+  }
+
+  .skill-set ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    height: 350px;
+  }
+
+  .skill-set li {
+    padding: 5px 0;
+    flex-grow: 1;
+    width: 33%;
+    font-size: 20px;
+    line-height: 44px;
+  }
+
+  /* Contact form */
+
+  .form {
+    margin: 80px 70px;
+    display: block;
+  }
+
+  .form h2 {
+    width: 39%;
+    float: left;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: left;
+  }
+
+  .form ul {
+    width: 450px;
+    padding-bottom: 0;
+    padding-top: 40px;
+  }
+
+  .form li {
+    margin-left: 150px;
+    width: 450px;
+  }
+
+  .form input {
+    width: 450px;
+  }
+
+  #message {
+    margin: 0;
+    padding: 0;
+    width: 450px;
+    height: 114px;
+  }
+
+  .form-button {
+    margin-left: 408px;
+  }
+
+  .form-hr {
+    width: auto;
+  }
+}
+
+/* Desktop version Media Query */
+
+@media (min-width: 1400px) {
+  /* Toolbar Desktop */
+
+  .nav-bar h3 {
+    margin-left: 150px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 150px;
+  }
+
+  .nav-bar li {
+    margin-left: 40px;
+    list-style: none;
+  }
+
+  .link {
+    color: #fff;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  /* Heading Section Desktop */
+
+  .intro {
+    height: 800px;
+    background-color: #1c1a19;
+    background-image: url("./assets/illustration-header-desktop.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    margin-left: 140px;
+    float: left;
+    margin-top: 250px;
+    padding: 0;
+  }
+
+  .name h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 81px;
+  }
+
+  .primary-content {
+    margin-left: 140px;
+    width: 566px;
+  }
+
+  .primary-content h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .primary-content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .intro ul {
+    order: -1;
+    flex-direction: column;
+    position: absolute;
+    padding: 0;
+    margin: 320px 0 0 0;
+  }
+
+  .socials li {
+    justify-content: space-between;
+    margin: 12px;
+  }
+
+  /* My Recent Works Section Desktop */
+
+  .recent-works {
+    padding: 0;
+    margin: 130px 140px;
+    text-align: left;
+  }
+
+  .section-title {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .section-title h3 {
+    margin-right: 30px;
+  }
+
+  .section-title hr {
+    height: 0;
+    width: 950px;
+    color: #212121;
+  }
+
+  .recent-works img {
+    width: 684px;
+    height: 448px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    float: left;
+  }
+
+  .recent-works h4 {
+    padding-top: 70px;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .recent-works p {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .recent-works li {
+    border: 1px solid black;
+    font-size: 15px;
+    line-height: 28px;
+    color: #091e42;
+    margin-right: 20px;
+    padding: 10px 20px;
+  }
+
+  .cards-section {
+    clear: both;
+    display: grid;
+    gap: 45px 25px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    padding-top: 0;
+  }
+
+  .work-card {
+    width: auto;
+    height: 435px;
+  }
+
+  .card-content h4 {
+    padding-top: 100px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .card-content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .card-content > ul {
+    display: flex;
+    width: 236px;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .card-content li {
+    color: white;
+    background: rgba(255, 255, 255, 0.24);
+    border: none;
+    padding: 12px;
+    margin-right: 12px;
+  }
+
+  /* About me Desktop */
+
+  .about-me {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1px 0 1px 0;
+    background-image: url(./assets/About-me_background_image-desktop.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 100px;
+  }
+
+  .about-content {
+    margin: 130px;
+  }
+
+  .about-text > h2 {
+    margin: 0;
+    font-family: Crete Round, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 81px;
+    color: #ff6b00;
+  }
+
+  .about-text > p {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+    width: 566px;
+  }
+
+  .about-text > button {
+    margin-top: 25px;
+    width: 161px;
+    height: 48px;
+  }
+
+  .about-text > hr {
+    padding-top: 210px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    width: auto;
+  }
+
+  .skill-set {
+    padding-top: 100px;
+    color: white;
+    text-align: left;
+  }
+
+  .skill-set ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    height: 350px;
+  }
+
+  .skill-set li {
+    padding: 5px 0;
+    flex-grow: 1;
+    width: 33%;
+  }
+
+  /* Contact form */
+
+  .form {
+    margin: 100px;
+    display: block;
+  }
+
+  .form h2 {
+    max-width: 455px;
+    float: left;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+  }
+
+  .form ul {
+    width: 684px;
+  }
+
+  .form li {
+    margin-left: 150px;
+    width: 684px;
+  }
+
+  .form input {
+    padding-top: 50px;
+    width: 684px;
+  }
+
+  #message {
+    margin: 0;
+    padding: 0;
+    width: 684px;
+    height: 114px;
+  }
+
+  .form-button {
+    margin-left: 75px;
+  }
+
+  .form-hr {
+    width: auto;
+  }
 }
