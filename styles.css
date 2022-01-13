@@ -185,12 +185,21 @@ button:active {
 
 /* Recent Work Cards */
 
+
 .cards-section {
   padding-top: 30px;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: 1fr;
+}
+
+.work-card {
+  transition: all 1s;
+}
+
+.work-card:hover {
+  transform: scale(1.1);
 }
 
 .card-content {
