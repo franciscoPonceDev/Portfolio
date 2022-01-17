@@ -11,7 +11,7 @@ As is the first project, we are supposed to do only the two firsts sections.
 
 ## Live Demo
 
-[Live Demo Link](https://franciscoponcedev.github.io/Portfolio-setup-and-mobile-version-skeleton)
+[Live Demo Link](https://franciscoponcedev.github.io/Portfolio/)
 
 
 ## Authors
