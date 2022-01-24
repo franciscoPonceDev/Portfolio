@@ -30,6 +30,67 @@ body > * {
   height: 50px;
 }
 
+.closing-btn {
+  display: none;
+}
+
+#nav.open {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #3c3a39;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+#nav.open .fa-bars {
+  display: none;
+}
+
+#nav.open h3{
+  display: none;
+}
+
+#nav.open .desktop-only {
+  align-self: flex-start;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+
+#nav.open ul {
+  width: 75%;
+}
+
+#nav.open li {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: #6f6c6b solid 1px;
+}
+
+#nav.open .fa-envelope {
+  display: none;
+  border: none;
+}
+
+#nav.open a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#nav.open .closing-btn {
+  display: flex;
+}
+
+
 /* Heading Section */
 
 .intro {

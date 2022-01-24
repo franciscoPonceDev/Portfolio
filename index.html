@@ -27,15 +27,16 @@
     <title>Francisco's Portfolio</title>
 </head>
 <body>
-        <header class="nav-bar">
+        <header id="nav" class="nav-bar">
             <h3>Francisco Ponce</h3>
+            <img id="close" src="./assets/closing-btn.svg" alt="Close menu" class="closing-btn">
             <ul class="desktop-only">
                 <li><a class="link" href="#portfolio">Portfolio</a></li>
                 <li><a class="link" href="#about-me">About</a></li>
                 <li><a class="link" href="#contact">Contact</a></li>
                 <li><a class="link" href="#contact"><i class="far fa-envelope fa-lg"></i></a></li>
             </ul>
-            <i class="fas fa-bars fa-lg"></i>
+            <i id="mobileMenu" class="fas fa-bars fa-lg"></i>
         </header>
         <section class="intro">
             <div class="name">
@@ -210,5 +211,6 @@
                 <li><a href=""><i class="fab fa-medium-m"></i></a></li>
             </ul>
         </footer>
+        <script src="navbar.js"></script>
 </body>
 </html>
