@@ -43,9 +43,10 @@ body > * {
   justify-content: flex-start;
 }
 
-#nav.open .closing-btn{
+#nav.open .closing-btn {
   margin-right: 8%;
   margin-top: 2%;
+  display: flex;
 }
 
 #nav.open .fa-bars {
@@ -152,10 +153,6 @@ body > * {
 #nav.open a {
   text-decoration: none;
   color: #fff;
-}
-
-#nav.open .closing-btn {
-  display: flex;
 }
 
 .intro {
