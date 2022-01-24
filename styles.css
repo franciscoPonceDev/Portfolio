@@ -43,6 +43,11 @@ body > * {
   justify-content: flex-start;
 }
 
+#nav.open .closing-btn{
+  margin-right: 8%;
+  margin-top: 2%;
+}
+
 #nav.open .fa-bars {
   display: none;
 }
@@ -139,7 +144,7 @@ body > * {
   border-bottom: #6f6c6b solid 1px;
 }
 
-#nav.open .fa-envelope {
+#nav.open .hide {
   display: none;
   border: none;
 }
