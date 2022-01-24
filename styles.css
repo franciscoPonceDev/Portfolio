@@ -18,8 +18,6 @@ body > * {
   display: none;
 }
 
-/* Toolbar */
-
 .nav-bar {
   display: flex;
   padding: 0 20px;
@@ -30,7 +28,132 @@ body > * {
   height: 50px;
 }
 
-/* Heading Section */
+.closing-btn {
+  display: none;
+}
+
+#nav.open {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #3c3a39;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+#nav.open .closing-btn {
+  margin-right: 8%;
+  margin-top: 2%;
+  display: flex;
+}
+
+#nav.open .fa-bars {
+  display: none;
+}
+
+.primary-content > h3 {
+  font-family: roboto, sans-serif;
+  color: #fff5e1;
+  font-size: 24px;
+  line-height: 32px;
+  margin: auto;
+}
+
+#nav.open h3 {
+  display: none;
+}
+
+#nav.open .desktop-only {
+  align-self: flex-start;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.card-content > ul {
+  display: flex;
+  width: 230px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.form ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0 0 24px 0;
+}
+
+.skill-set ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+#nav.open ul {
+  width: 75%;
+}
+
+.socials > li {
+  list-style-type: none;
+}
+
+.recent-works li {
+  border: 1px solid black;
+  list-style: none;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  padding: 10px;
+  margin: 0 12px 0 0;
+}
+
+.skill-set li {
+  padding: 17px 0;
+}
+
+.form li {
+  padding-bottom: 20px;
+}
+
+.footer-socials li {
+  list-style: none;
+}
+
+.card-content li {
+  color: white;
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+}
+
+#nav.open li {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: #6f6c6b solid 1px;
+}
+
+#nav.open .hide {
+  display: none;
+  border: none;
+}
+
+#nav.open a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .intro {
   height: 500px;
@@ -58,14 +181,6 @@ body > * {
   line-height: 64px;
 }
 
-.primary-content > h3 {
-  font-family: roboto, sans-serif;
-  color: #fff5e1;
-  font-size: 24px;
-  line-height: 32px;
-  margin: auto;
-}
-
 .primary-content > p {
   font-family: poppins, sans-serif;
   color: white;
@@ -83,15 +198,9 @@ body > * {
   padding-top: 20px;
 }
 
-.socials > li {
-  list-style-type: none;
-}
-
 .fab {
   color: #dbd8d7;
 }
-
-/* Recent Works Section */
 
 .recent-works {
   font-family: Crete Round, sans-serif;
@@ -140,19 +249,6 @@ hr {
   width: 250px;
   justify-content: space-between;
   padding: 0;
-}
-
-.recent-works li {
-  border: 1px solid black;
-  list-style: none;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #091e42;
-  padding: 10px;
-  margin: 0 12px 0 0;
 }
 
 button {
@@ -233,19 +329,6 @@ button:active {
   color: white;
 }
 
-.card-content > ul {
-  display: flex;
-  width: 230px;
-  justify-content: space-between;
-  padding: 0;
-}
-
-.card-content li {
-  color: white;
-  background: rgba(255, 255, 255, 0.24);
-  border: none;
-}
-
 .work-card > button {
   width: 100%;
 }
@@ -305,17 +388,6 @@ button:active {
   text-align: center;
 }
 
-.skill-set ul {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0;
-}
-
-.skill-set li {
-  padding: 17px 0;
-}
-
 .languages {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -369,19 +441,6 @@ button:active {
   line-height: 44px;
   color: #172b4d;
   text-align: center;
-}
-
-.form ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0 0 24px 0;
-}
-
-.form li {
-  padding-bottom: 20px;
 }
 
 .form input {
@@ -443,9 +502,7 @@ footer {
   color: #505f79;
 }
 
-.footer-socials li {
-  list-style: none;
-}
+
 
 /* Desktop version Media Query */
 
