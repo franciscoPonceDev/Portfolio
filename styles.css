@@ -212,7 +212,6 @@ body > * {
   padding-top: 100px;
   color: #1c1a19;
   padding-bottom: 120px;
-  marg
 }
 
 hr {
@@ -435,6 +434,20 @@ button:active {
   flex-direction: column;
 }
 
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control small {
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: red;
+}
+
 .form h2 {
   font-family: Inter, sans-serif;
   font-weight: bold;
@@ -458,6 +471,14 @@ input :invalid {
 }
 
 input :invalid :required {
+  border: 2px solid red;
+}
+
+.email-input {
+  margin-bottom: 15px;
+}
+
+.form-control.error .email-input {
   border: 2px solid red;
 }
 
@@ -547,7 +568,7 @@ footer {
 
 .modal-tags .tech-used {
   width: auto;
-  padding 10px
+  padding: 10px;
 }
 
 .modal-img-container img {
@@ -1241,7 +1262,7 @@ footer {
 
   .modal-tags .tech-used {
     width: auto;
-    padding 10px
+    padding: 10px;
   }
 
   .modal-img-container img {
