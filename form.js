@@ -17,7 +17,7 @@ function checkInputs() {
   }
   
   if (!isEmail(emailValue)) {
-    setErrorFor(email, "Not a valid email");
+    setErrorFor(email, "Can not submit email with uppercase characters");
   } else {
     form.submit();
   }
