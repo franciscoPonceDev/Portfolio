@@ -3,7 +3,7 @@ const form = document.getElementById("contact");
 const email = document.getElementById("email");
 
 function isEmail(email) {
-  return email.match(/^[a-z]*$/);
+  return email.match(/^[a-z]+@+.*$/);
 }
 
 function checkInputs() {
