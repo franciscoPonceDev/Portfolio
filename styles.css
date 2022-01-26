@@ -212,6 +212,7 @@ body > * {
   padding-top: 100px;
   color: #1c1a19;
   padding-bottom: 120px;
+  marg
 }
 
 hr {
@@ -502,7 +503,66 @@ footer {
   color: #505f79;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none;
+  overflow: auto;
+}
 
+.modal-content {
+  background: #fff;
+  margin: 50px 20px;
+  width: 85%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 24px;
+  border-radius: 4px;
+  z-index: 4;
+}
+
+.modal-close-btn {
+  height: auto;
+  width: auto;
+}
+
+.modal-close {
+  position: absolute;
+  color: #3c3a39;
+  right: 45px;
+  top: 110px;
+}
+
+.modal-tags {
+  display: flex;
+  padding: 0;
+  align-items: flex-start;
+}
+
+.modal-tags .tech-used {
+  width: auto;
+  padding 10px
+}
+
+.modal-img-container img {
+  padding: 0;
+}
+
+.modal-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.fa-github-alt {
+  color: #fff;
+}
 
 /* Desktop version Media Query */
 
@@ -947,7 +1007,6 @@ footer {
   }
 
   .recent-works h4 {
-    padding-top: 70px;
     margin-bottom: 0;
     font-style: normal;
     font-weight: normal;
@@ -1130,5 +1189,75 @@ footer {
 
   .form-hr {
     width: auto;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: none;
+    overflow: auto;
+  }
+
+  .modal-content {
+    background: #fff;
+    margin: 50px 20px;
+    width: 85%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    border-radius: 4px;
+    z-index: 4;
+  }
+
+  .modal-close-btn {
+    height: auto;
+    width: auto;
+  }
+
+  .modal-close {
+    position: absolute;
+    color: #3c3a39;
+    right: 150px;
+    top: 100px;
+  }
+
+  .modal-content h4 {
+    margin: 10px 24px;
+    padding: 0;
+  }
+
+  .modal-tags {
+    display: flex;
+    padding: 0;
+    margin: 0 24px;
+    align-items: flex-start;
+  }
+
+  .modal-tags .tech-used {
+    width: auto;
+    padding 10px
+  }
+
+  .modal-img-container img {
+    padding: 0;
+    margin: 24px;
+  }
+
+  .modal-links {
+    display: flex;
+    width: 300px;
+    justify-content: left;
+    padding: 0;
+    margin-top: 145px;
+  }
+
+  .modal-links a {
+    margin-right: 15px;
   }
 }
