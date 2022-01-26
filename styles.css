@@ -445,6 +445,7 @@ button:active {
 
 .form-control.error small {
   visibility: visible;
+  color: red;
 }
 
 .form h2 {
@@ -475,6 +476,10 @@ input :invalid :required {
 
 .email-input {
   margin-bottom: 15px;
+}
+
+.form-control.error .email-input {
+  border: 2px solid red;
 }
 
 .form textarea {
