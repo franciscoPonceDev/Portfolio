@@ -28,7 +28,3 @@ window.onload = function storeInputs() {
     localStorage.setItem('contact-form', JSON.stringify(lStorage));
   });
 };
-
-//     document.getElementById('name').innerHTML = localStorage.getItem("name");
-//     document.getElementById('email').innerHTML = localStorage.getItem("email");
-//     document.getElementById('message').innerHTML = localStorage.getItem("message");
