@@ -1,39 +1,31 @@
 window.onload = function storeInputs() {
   let lStorage = {};
 
-  const nameInput = document.getElementById("name");
-  let nameValue = document.getElementById("name").value;
-  const emailInput = document.getElementById("email");
-  let emailValue = document.getElementById("email").value;
-  const messageInput = document.getElementById("message");
-  let messageValue = document.getElementById("message").value;
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const messageInput = document.getElementById('message');
 
-  if (localStorage.getItem("contact-form")) {
-    lStorage = JSON.parse(localStorage.getItem("contact-form"));
-    console.log(lStorage);
+  if (localStorage.getItem('contact-form')) {
+    lStorage = JSON.parse(localStorage.getItem('contact-form'));
 
     nameInput.value = lStorage.name;
     emailInput.value = lStorage.email;
     messageInput.value = lStorage.message;
   }
 
-  nameInput.addEventListener("change", (event) => {
+  nameInput.addEventListener('change', (event) => {
     lStorage = { ...lStorage, name: event.target.value };
-    console.log(nameValue);
-    console.log(lStorage);
-    localStorage.setItem("contact-form", JSON.stringify(lStorage));
+    localStorage.setItem('contact-form', JSON.stringify(lStorage));
   });
 
-  emailInput.addEventListener("change", (event) => {
+  emailInput.addEventListener('change', (event) => {
     lStorage = { ...lStorage, email: event.target.value };
-    console.log(lStorage);
-    localStorage.setItem("contact-form", JSON.stringify(lStorage));
+    localStorage.setItem('contact-form', JSON.stringify(lStorage));
   });
 
-  messageInput.addEventListener("change", (event) => {
+  messageInput.addEventListener('change', (event) => {
     lStorage = { ...lStorage, message: event.target.value };
-    console.log(lStorage);
-    localStorage.setItem("contact-form", JSON.stringify(lStorage));
+    localStorage.setItem('contact-form', JSON.stringify(lStorage));
   });
 };
 
